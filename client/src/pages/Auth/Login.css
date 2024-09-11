@@ -1,0 +1,54 @@
+
+.container{
+    width: 38%;
+    height: 58%;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    border: 1px solid rgb(10, 144, 3);
+    padding: 20px;
+}
+
+.container h2,
+.container p{
+    text-align: center;
+}
+
+.container p{
+    margin-bottom: 30px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 30px;
+
+}
+
+.container label{
+    margin-bottom: 10px;
+    font-family: "Arsenal SC", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.container input{
+    width: 90%;
+    height: 1.5rem;
+    padding: 0.2rem 1rem;
+    border: 1px solid rgb(10, 144, 3);
+}
+
+.form-btn{
+    /* width: 90%;
+    height: 1.5rem; */
+    padding: 9px 224px;
+    margin-left: 29px;
+    margin-top: 20px;
+    background-color: rgb(10, 144, 3);
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}

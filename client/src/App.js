@@ -6,8 +6,10 @@ import TopBrands from './pages/topBrand';
 import Favourites from './pages/Favourite';
 import Contact from './pages/Contact';
 import Carts from './pages/Carts'
-import { SignIn } from './pages/SignIn';
-import { SignUp } from './pages/SignUp';
+// import { Login } from './pages/Auth/Login';
+// import { Register } from './pages/Auth/Register.js';
+import Register from './pages/Auth/Register';
+import Login from './pages/Auth/Login';
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
       <Route path='/favourites' element={<Favourites />} />
       <Route path='/carts' element={<Carts />} />
       <Route path='/contact' element={<Contact />} />
-      <Route path='/signin' element={<SignIn />} />
-      <Route path='/signup' element={<SignUp />} />
+      <Route path='/signin' element={<Login />} />
+      <Route path='/signup' element={<Register />} />
     </Routes>
   );
 }

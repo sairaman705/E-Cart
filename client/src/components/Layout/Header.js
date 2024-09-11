@@ -6,6 +6,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
+    
     setIsOpen(!isOpen);
   };
 
@@ -56,15 +57,17 @@ export const Header = () => {
             Search
           </button>
         </form>
-        <div className="auth-links">
+        <div className={`auth-links ${isOpen ? "open" : ""}`}>                                         
           <NavLink className="nav-link signin" to="/signin">
-            Sign In
+            Login
           </NavLink>
           <NavLink className="nav-link signup" to="/signup">
-            Sign Up
+            Register
           </NavLink>
         </div>
       </div>
+      {/* Overlay to close menu when clicked outside */}
+      {isOpen && <div className="overlay" onClick={handleToggle}></div>}
     </div>
   );
 };
